@@ -14,27 +14,27 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Leitura.Apartamento" class="control-label"></label>
+                <label asp-for="Leitura.Apartamento" class="control-label"><strong>Apartamento</strong></label>
                 <input asp-for="Leitura.Apartamento" class="form-control" />
                 <span asp-validation-for="Leitura.Apartamento" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Leitura.Bloco" class="control-label"></label>
+                <label asp-for="Leitura.Bloco" class="control-label"><strong>Bloco</strong></label>
                 <input asp-for="Leitura.Bloco" class="form-control" />
                 <span asp-validation-for="Leitura.Bloco" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Leitura.LeituraAnterior" class="control-label">Leitura Anterior</label>
+                <label asp-for="Leitura.LeituraAnterior" class="control-label"><strong>Leitura Anterior</strong></label>
                 <input asp-for="Leitura.LeituraAnterior" class="form-control" />
                 <span asp-validation-for="Leitura.LeituraAnterior" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Leitura.LeituraAtual" class="control-label">Leitura Atual</label>
+                <label asp-for="Leitura.LeituraAtual" class="control-label"><strong>Leitura Atual</strong></label>
                 <input asp-for="Leitura.LeituraAtual" class="form-control" />
                 <span asp-validation-for="Leitura.LeituraAtual" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Leitura.Consumo" class="control-label">Consumo</label>
+                <label asp-for="Leitura.Consumo" class="control-label"><strong>Consumo</strong></label>
                 <input asp-for="Leitura.Consumo" class="form-control" />
                 <span asp-validation-for="Leitura.Consumo" class="text-danger"></span>
             </div>
@@ -50,9 +50,9 @@
         </form>
     </div>
 </div>
-
+<p></p>
 <div>
-    <a asp-page="Index">Voltar ao Menu</a>
+    <a button type="button" class="btn btn-danger" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" asp-page="Index">Voltar ao Menu</a>
 </div>
 
 @section Scripts {

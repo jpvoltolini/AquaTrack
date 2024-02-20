@@ -8,7 +8,7 @@
 <h1>Lista de Leituras</h1>
 
 <p>
-    <a asp-page="Create">Cadastrar Nova Leitura</a>
+    <a asp-page="Create" button type="button" class="btn btn-primary">Cadastrar Nova Leitura</a>
 </p>
 <table class="table">
     <thead>
@@ -55,10 +55,18 @@
             <!-- <td>
                     c@Html.DisplayFor(modelItem => item.DataLeitura)
                 </td>-->
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Detalhes</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Deletar</a>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Opções
+                        </button >
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-page="./Edit" asp-route-id="@item.Id" style="text-align:center">Editar</a></li>
+                            <li><a class="dropdown-item" asp-page="./Details" asp-route-id="@item.Id" style="text-align:center">Detalhes</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" asp-page="./Delete" asp-route-id="@item.Id" style="text-align:center" >Deletar</a></li>
+                        </ul>
+                    </div>
             </td>
         </tr>
 }

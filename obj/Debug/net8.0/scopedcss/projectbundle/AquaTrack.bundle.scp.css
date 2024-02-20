@@ -19,9 +19,7 @@ a[b-zdy1hwf1rm] {
 }
 
 .nav-pills .nav-link.active[b-zdy1hwf1rm], .nav-pills .show > .nav-link[b-zdy1hwf1rm] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    background-image: linear-gradient(45deg,#00BFFF, #40E0D0, #87CEFA,#0d6efd);
 }
 
 .border-top[b-zdy1hwf1rm] {

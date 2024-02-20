@@ -238,3 +238,4 @@ C:\Users\jpthe\OneDrive\Documentos\DEV AULAS\c#\Desafio\AquaTrack\bin\Debug\net8
 C:\Users\jpthe\OneDrive\Documentos\DEV AULAS\c#\Desafio\AquaTrack\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\jpthe\OneDrive\Documentos\DEV AULAS\c#\Desafio\AquaTrack\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\jpthe\OneDrive\Documentos\DEV AULAS\c#\Desafio\AquaTrack\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\jpthe\OneDrive\Documentos\DEV AULAS\c#\Desafio\AquaTrack\obj\Debug\net8.0\AquaTrack.sourcelink.json
