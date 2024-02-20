@@ -1,0 +1,60 @@
+﻿@page
+@model AquaTrack.Pages.Leituras.CreateModel
+
+@{
+    ViewData["Title"] = "Novo Cadastro";
+}
+
+<h1>Novo Cadastro</h1>
+
+<h4>Leitura</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Leitura.Apartamento" class="control-label"></label>
+                <input asp-for="Leitura.Apartamento" class="form-control" />
+                <span asp-validation-for="Leitura.Apartamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Leitura.Bloco" class="control-label"></label>
+                <input asp-for="Leitura.Bloco" class="form-control" />
+                <span asp-validation-for="Leitura.Bloco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Leitura.LeituraAnterior" class="control-label">Leitura Anterior</label>
+                <input asp-for="Leitura.LeituraAnterior" class="form-control" />
+                <span asp-validation-for="Leitura.LeituraAnterior" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Leitura.LeituraAtual" class="control-label">Leitura Atual</label>
+                <input asp-for="Leitura.LeituraAtual" class="form-control" />
+                <span asp-validation-for="Leitura.LeituraAtual" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Leitura.Consumo" class="control-label">Consumo</label>
+                <input asp-for="Leitura.Consumo" class="form-control" />
+                <span asp-validation-for="Leitura.Consumo" class="text-danger"></span>
+            </div>
+           <!--<div class="form-group">
+                <label asp-for="Leitura.DataLeitura" class="control-label"></label>
+                <input asp-for="Leitura.DataLeitura" class="form-control" />
+                <span asp-validation-for="Leitura.DataLeitura" class="text-danger"></span>
+            </div>-->
+            <p></p>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Voltar ao Menu</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

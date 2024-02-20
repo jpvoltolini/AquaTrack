@@ -1,0 +1,66 @@
+﻿@page
+@model AquaTrack.Pages.Leituras.IndexModel
+
+@{
+    ViewData["Title"] = "AquaTrack";
+}
+
+<h1>Lista de Leituras</h1>
+
+<p>
+    <a asp-page="Create">Cadastrar Nova Leitura</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Leitura[0].Apartamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Leitura[0].Bloco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Leitura[0].LeituraAnterior)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Leitura[0].LeituraAtual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Leitura[0].Consumo)
+            </th>
+            <!--<th>
+               c@Html.DisplayNameFor(model => model.Leitura[0].DataLeitura)
+            </th>-->
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Leitura) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apartamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bloco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeituraAnterior)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeituraAtual)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Consumo)
+            </td>
+            <!-- <td>
+                    c@Html.DisplayFor(modelItem => item.DataLeitura)
+                </td>-->
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

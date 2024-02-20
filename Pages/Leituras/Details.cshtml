@@ -1,0 +1,55 @@
+﻿@page
+@model AquaTrack.Pages.Leituras.DetailsModel
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Leitura</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Leitura.Apartamento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Leitura.Apartamento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Leitura.Bloco)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Leitura.Bloco)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Leitura.LeituraAnterior)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Leitura.LeituraAnterior)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Leitura.LeituraAtual)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Leitura.LeituraAtual)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Leitura.Consumo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Leitura.Consumo)
+       <!-- </dd>
+        <dt class="col-sm-2">
+            COMENTARIO@Html.DisplayNameFor(model => model.Leitura.DataLeitura)
+        </dt>
+        <dd class="col-sm-10">
+                 COMENTARIO@Html.DisplayFor(model => model.Leitura.DataLeitura)
+        </dd>-->
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Leitura.Id">Editar</a> |
+    <a asp-page="./Index">Voltar ao Menu</a>
+</div>
