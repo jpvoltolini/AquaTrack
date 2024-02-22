@@ -14,12 +14,12 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Leitura.Apartamento" class="control-label"><strong>Apartamento</strong></label>
+                <label asp-for="Leitura.Apartamento" class="control-label"><strong>Apartamento</strong> (Ex: 101, 304, 902..)</label>
                 <input asp-for="Leitura.Apartamento" class="form-control" />
                 <span asp-validation-for="Leitura.Apartamento" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Leitura.Bloco" class="control-label"><strong>Bloco</strong></label>
+                <label asp-for="Leitura.Bloco" class="control-label"><strong>Bloco</strong> (Ex: A, B, C.)</label>
                 <input asp-for="Leitura.Bloco" class="form-control" />
                 <span asp-validation-for="Leitura.Bloco" class="text-danger"></span>
             </div>
@@ -38,11 +38,12 @@
                 <input asp-for="Leitura.Consumo" class="form-control" />
                 <span asp-validation-for="Leitura.Consumo" class="text-danger"></span>
             </div>
-           <!--<div class="form-group">
-                <label asp-for="Leitura.DataLeitura" class="control-label"></label>
+           <div class="form-group">
+                <label asp-for="Leitura.DataLeitura" class="control-label"><strong>Data da Última Leitura</strong></label>
                 <input asp-for="Leitura.DataLeitura" class="form-control" />
                 <span asp-validation-for="Leitura.DataLeitura" class="text-danger"></span>
-            </div>-->
+
+            </div>
             <p></p>
             <div class="form-group">
                 <input type="submit" value="Salvar" class="btn btn-primary" />

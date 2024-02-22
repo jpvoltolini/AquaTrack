@@ -35,6 +35,9 @@ namespace AquaTrack.Pages.Leituras
                 return Page();
             }
 
+            // Converte a DataLeitura para Utc
+            Leitura.DataLeitura = Leitura.DataLeitura.ToUniversalTime();
+
             _context.Leituras.Add(Leitura);
             await _context.SaveChangesAsync();
 

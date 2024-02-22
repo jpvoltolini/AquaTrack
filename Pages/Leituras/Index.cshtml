@@ -20,17 +20,17 @@
                 @Html.DisplayNameFor(model => model.Leitura[0].Bloco)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Leitura[0].LeituraAnterior)
+                Leitura Anterior
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Leitura[0].LeituraAtual)
+                Leitura Atual
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Leitura[0].Consumo)
             </th>
-            <!--<th>
-               c@Html.DisplayNameFor(model => model.Leitura[0].DataLeitura)
-            </th>-->
+            <th>
+                Data de Leitura
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -52,9 +52,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Consumo)
             </td>
-            <!-- <td>
-                    c@Html.DisplayFor(modelItem => item.DataLeitura)
-                </td>-->
+            <td>
+                    @Html.DisplayFor(modelItem => item.DataLeitura)
+                </td>
                 <td>
                     <div class="dropdown">
                         <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">

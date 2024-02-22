@@ -20,6 +20,8 @@ namespace AquaTrack.Pages.Leituras
 
         public IList<Leitura> Leitura { get;set; } = default!;
 
+
+
         public async Task OnGetAsync()
         {
             Leitura = await _context.Leituras.ToListAsync();

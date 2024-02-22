@@ -23,7 +23,7 @@ namespace AquaTrack.Migrations
                     LeituraAnterior = table.Column<int>(type: "integer", nullable: false),
                     LeituraAtual = table.Column<int>(type: "integer", nullable: false),
                     Consumo = table.Column<int>(type: "integer", nullable: false),
-                   /// DataLeitura = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                    DataLeitura = table.Column<DateTime>(type: "data", nullable: true)
                 },
                 constraints: table =>
                 {

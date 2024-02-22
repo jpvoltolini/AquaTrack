@@ -43,8 +43,8 @@ namespace AquaTrack.Migrations
                     b.Property<int>("Consumo")
                         .HasColumnType("integer");
 
-                    ///b.Property<DateTime>("DataLeitura")
-                       // .HasColumnType("timestamp with time zone");
+                    b.Property<DateTime>("DataLeitura")
+                        .HasColumnType("date");
 
                     b.Property<int>("LeituraAnterior")
                         .HasColumnType("integer");
