@@ -1,0 +1,49 @@
+﻿@page
+@model AquaTrack.Pages.Condominios.DetailsModel
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Condominio</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Condomínio:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Condominio.NomeCondominio)
+        </dd>
+        <dt class="col-sm-2">
+            Endereço:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Condominio.Endereco)
+        </dd>
+        <dt class="col-sm-2">
+            Contato Síndico:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Condominio.TelefoneSindico)
+        </dd>
+        <dt class="col-sm-2">
+            Contato Zelador:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Condominio.TelefoneZelador)
+        </dd>
+        <dt class="col-sm-2">
+            Total de Unidades:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Condominio.NumeroUnidades)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a button type="button" class="btn btn-success" asp-page="./Edit" asp-route-id="@Model.Condominio.Id">Editar</a>
+    <a button type="button" class="btn btn-outline-danger" asp-page="./Index">Voltar ao Menu</a>
+</div>

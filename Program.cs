@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<BancoDeDados>();
+builder.Services.AddDbContext<BancoCondominio>(); 
 
 // Add services to the container.
 builder.Services.AddRazorPages();

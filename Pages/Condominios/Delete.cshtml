@@ -1,14 +1,14 @@
 ﻿@page
-@model AquaTrack.Pages.Leituras.DeleteModel
+@model AquaTrack.Pages.Condominios.DeleteModel
 
 @{
-    ViewData["Title"] = "Deletar";
+    ViewData["Title"] = "Delete";
 }
 
 <h1>Deletar Registro</h1>
 <div class="alert alert-danger alert-dismissible fade show" role="alert">
     <h5>
-    <strong> Tem certeza que deseja apagar o registro?</strong> 
+    <strong> Tem certeza que deseja apagar o registro?</strong>
         Uma vez feito, não poderá voltar atrás.
     </h5><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
@@ -17,46 +17,40 @@
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            Apartamento:
+            Condomínio:
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Leitura.Apartamento)
+            @Html.DisplayFor(model => model.Condominio.NomeCondominio)
         </dd>
         <dt class="col-sm-2">
-            Bloco:
+            Endereço:
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Leitura.Bloco)
+            @Html.DisplayFor(model => model.Condominio.Endereco)
         </dd>
         <dt class="col-sm-2">
-            Leitura Anterior:
+            Contato Síndico:
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Leitura.LeituraAnterior)
+            @Html.DisplayFor(model => model.Condominio.TelefoneSindico)
         </dd>
         <dt class="col-sm-2">
-            Leitura Atual:
+            Contato Zelador:
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Leitura.LeituraAtual)
+            @Html.DisplayFor(model => model.Condominio.TelefoneZelador)
         </dd>
         <dt class="col-sm-2">
-            Consumo Total:
+            Total de Unidades:
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Leitura.Consumo)
-        </dd>
-        <dt class="col-sm-2">
-            Data da Ultima Leitura:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Leitura.DataLeitura)
+            @Html.DisplayFor(model => model.Condominio.NumeroUnidades)
         </dd>
     </dl>
     
     <form method="post">
-        <input type="hidden" asp-for="Leitura.Id" />
-        <input type="submit" value="Deletar" class="btn btn-danger" /> 
+        <input type="hidden" asp-for="Condominio.Id" />
+        <input type="submit" value="Deletar" class="btn btn-danger" />
         <a button type="button" class="btn btn-warning" asp-page="./Index">Voltar ao Menu</a>
     </form>
 </div>

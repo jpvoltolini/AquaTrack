@@ -1,0 +1,55 @@
+﻿@page
+@model AquaTrack.Pages.Condominios.CreateModel
+
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<h1>Novo Cadastro</h1>
+
+<h4>Condomínio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Condominio.NomeCondominio" class="control-label"><strong>Nome do Condomínio</strong></label>
+                <input asp-for="Condominio.NomeCondominio" class="form-control" />
+                <span asp-validation-for="Condominio.NomeCondominio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Condominio.Endereco" class="control-label"><strong>Endereço</strong></label>
+                <input asp-for="Condominio.Endereco" class="form-control" />
+                <span asp-validation-for="Condominio.Endereco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Condominio.TelefoneSindico" class="control-label"><strong>Telefone do Síndico</strong></label>
+                <input asp-for="Condominio.TelefoneSindico" class="form-control" />
+                <span asp-validation-for="Condominio.TelefoneSindico" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Condominio.TelefoneZelador" class="control-label"><strong>Telefone do Zelador</strong></label>
+                <input asp-for="Condominio.TelefoneZelador" class="form-control" />
+                <span asp-validation-for="Condominio.TelefoneZelador" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Condominio.NumeroUnidades" class="control-label"><strong>Numero de Unidades</strong></label>
+                <input asp-for="Condominio.NumeroUnidades" class="form-control" />
+                <span asp-validation-for="Condominio.NumeroUnidades" class="text-danger"></span>
+            </div>
+            <p></p>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<p></p>
+<div>
+    <a button type="button" class="btn btn-danger" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" asp-page="Index">Voltar ao Menu</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

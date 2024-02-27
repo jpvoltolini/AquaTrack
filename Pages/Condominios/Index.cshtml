@@ -1,0 +1,68 @@
+﻿@page
+@model AquaTrack.Pages.Condominios.IndexModel
+
+@{
+    ViewData["Title"] = "Lista";
+}
+
+<h1>Lista de Condomínios</h1>
+
+<p>
+    <a asp-page="Create" button type="button" class="btn btn-primary">Cadastrar Condomínio</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Condomínio
+            </th>
+            <th>
+                Endereço
+            </th>
+            <th>
+                Telefone Síndico
+            </th>
+            <th>
+                Telefone Zelador
+            </th>
+            <th>
+                Número de Unidades
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Condominio) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeCondominio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Endereco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefoneSindico)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefoneZelador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroUnidades)
+            </td>
+            <td>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Opções
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" asp-page="./Edit" asp-route-id="@item.Id" style="text-align:center">Editar</a></li>
+                        <li><a class="dropdown-item" asp-page="./Details" asp-route-id="@item.Id" style="text-align:center">Detalhes</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" asp-page="./Delete" asp-route-id="@item.Id" style="text-align:center">Deletar</a></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

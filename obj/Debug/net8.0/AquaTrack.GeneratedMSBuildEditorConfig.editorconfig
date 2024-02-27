@@ -26,6 +26,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = c:\Users\jpthe\OneDrive\Documentos\DEV AULAS\c#\Desafio\AquaTrack
 build_property._RazorSourceGeneratorDebug = 
 
+[c:/Users/jpthe/OneDrive/Documentos/DEV AULAS/c\#/Desafio/AquaTrack/Pages/Condominios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZG9taW5pb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/jpthe/OneDrive/Documentos/DEV AULAS/c\#/Desafio/AquaTrack/Pages/Condominios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZG9taW5pb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/jpthe/OneDrive/Documentos/DEV AULAS/c\#/Desafio/AquaTrack/Pages/Condominios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZG9taW5pb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/jpthe/OneDrive/Documentos/DEV AULAS/c\#/Desafio/AquaTrack/Pages/Condominios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZG9taW5pb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/jpthe/OneDrive/Documentos/DEV AULAS/c\#/Desafio/AquaTrack/Pages/Condominios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZG9taW5pb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/jpthe/OneDrive/Documentos/DEV AULAS/c\#/Desafio/AquaTrack/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
